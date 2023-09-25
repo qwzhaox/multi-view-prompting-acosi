@@ -35,6 +35,8 @@ if __name__ == "__main__":
     log_files = [
         "llms/results/chatgpt_test_200_acos_rest16_0shot.log", 
         "llms/results/chatgpt_test_200_acos_rest16_10shot.log",
+        "llms/results/chatgpt_test_200_acosi_shoes_0shot.log", 
+        "llms/results/chatgpt_test_200_acosi_shoes_10shot.log",
         "llms/results/chatgpt_test_200_asqp_rest15_0shot.log",
         "llms/results/chatgpt_test_200_asqp_rest15_10shot.log",
         "llms/results/chatgpt_test_200_aste_laptop14_0shot.log",

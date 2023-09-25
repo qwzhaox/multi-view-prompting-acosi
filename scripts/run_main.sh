@@ -7,18 +7,21 @@ TASK_DATA[asqp]="rest15 rest16"
 TASK_DATA[acos]="laptop16 rest16"
 TASK_DATA[aste]="laptop14"
 TASK_DATA[tasd]="rest15 rest16"
+TASK_DATA[acosi]="shoes"
 
 cd src
 
 # for SVP_TYPE in heuristic rand rank 
-for TASK in aste
+for TASK in acosi
 do
 for DATA in ${TASK_DATA[${TASK}]}
 do
 for DATA_RATIO in 1.0
 do
-for SEED in 5 10 15 20 25
+for SEED in 5
 do
+# for SEED in 5 10 15 20 25
+# do
 for K in 5
 # for K in 3 7 15
 do

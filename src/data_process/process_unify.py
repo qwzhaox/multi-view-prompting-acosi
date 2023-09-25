@@ -1,6 +1,7 @@
 import os
 import random
 import sys
+
 sys.path.append(".")
 
 from collections import Counter
@@ -27,19 +28,18 @@ def process(data_folder, tasks, out_dir):
             print("data:", data_path)
             # acos data_name
             for split in ["train", "dev", "test"]:
-                with open(join(data_path, "{}.txt".format(split)),
-                          'r',
-                          encoding="utf-8") as fp:
+                with open(
+                    join(data_path, "{}.txt".format(split)), "r", encoding="utf-8"
+                ) as fp:
                     for line in fp:
                         line = line.strip().lower()
-                        if line != '':
-                            words, tuples = line.split('####')
+                        if line != "":
+                            words, tuples = line.split("####")
                         # parse aste
                         if task == "aste":
                             aste_tuples = []
                             for _tuple in eval(tuples):
-                                parsed_tuple = parse_aste_tuple(
-                                    _tuple, words.split())
+                                parsed_tuple = parse_aste_tuple(_tuple, words.split())
                                 aste_tuples.append(parsed_tuple)
                             tuples = str(aste_tuples)
 
@@ -95,19 +95,17 @@ def process(data_folder, tasks, out_dir):
         # sort
         train_set = sorted(train_set, key=lambda x: x[2])
 
-        with open(out_dir + "seed{}/train.txt".format(seed),
-                  'w',
-                  encoding="utf-8") as fp:
+        with open(
+            out_dir + "seed{}/train.txt".format(seed), "w", encoding="utf-8"
+        ) as fp:
             for item in train_set:
                 fp.write("{}\t{}\t{}####{}\n".format(*item))
 
-        with open(out_dir + "seed{}/dev.txt".format(seed),
-                  'w',
-                  encoding="utf-8") as fp:
+        with open(out_dir + "seed{}/dev.txt".format(seed), "w", encoding="utf-8") as fp:
             for item in dev_set:
                 fp.write("{}\t{}\t{}####{}\n".format(*item))
 
 
 if __name__ == "__main__":
-    tasks = ["acos", "asqp", "aste", "tasd"]
+    tasks = ["acos", "asqp", "aste", "tasd", "acosi"]
     process("../data", tasks, "../data/unified/")
