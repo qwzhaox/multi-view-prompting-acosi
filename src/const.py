@@ -183,11 +183,11 @@ def get_acosi_categories():
 
 shoes_aspect_cate_list = get_acosi_categories()
 
-force_tokens = {}
+# force_tokens = {}
 
-if os.path.exists("./force_tokens.json"):
-    with open("force_tokens.json", "r") as f:
-        force_tokens = json.load(f)
+# if os.path.exists("./force_tokens.json"):
+with open("force_tokens.json", "r") as f:
+    force_tokens = json.load(f)
 
 cate_list = {
     "rest14": rest_aspect_cate_list,

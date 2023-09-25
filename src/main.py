@@ -401,11 +401,10 @@ class T5FineTuner(pl.LightningModule):
             with open("force_tokens.json", "w") as f:
                 json.dump(dic, f, indent=4)
 
-            force_tokens = dic
-        elif not force_tokens:
-            with open("force_tokens.json", "r") as f:
-                force_tokens = json.load(f)
-
+        #     force_tokens = dic
+        # elif not force_tokens:
+        #     with open("force_tokens.json", "r") as f:
+        #         force_tokens = json.load(f)
 
         to_id = {
             "OT": [667],
