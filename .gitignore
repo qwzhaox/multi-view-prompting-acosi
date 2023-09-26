@@ -1,4 +1,4 @@
-outputs
+# outputs
 *.gz
 logs/
 results/
@@ -66,7 +66,7 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
+# *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -169,4 +169,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-outputs/
+outputs/**/**/final/
+outputs/**/**/lightning_logs/
+outputs/**/**/*.pickle
+
+outputs/**/lightning_logs/
+outputs/**/final/
