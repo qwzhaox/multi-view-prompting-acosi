@@ -38,7 +38,7 @@ python main.py \
     --model_name_or_path t5-base \
     --output_dir $OUT_DIR \
     --num_train_epochs 20 \
-    --save_top_k 0 \
+    --save_top_k 1 \
     --task $TASK \
     --top_k $K \
     --ctrl_token $CTRL_TOKEN \
@@ -51,7 +51,7 @@ python main.py \
     --lowercase \
     --sort_label \
     --data_ratio $DATA_RATIO \
-    --check_val_every_n_epoch 10  \
+    --check_val_every_n_epoch 2  \
     --agg_strategy vote \
     --eval_batch_size 64 \
     --constrained_decode \

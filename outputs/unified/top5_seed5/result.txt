@@ -1,0 +1,26 @@
+seed: 5, beam: 1, constrained: True
+aste: 	laptop14: 	test vote precision: 66.93 recall: 61.74 F1 = 64.23
+aste: 	rest14: 	test vote precision: 75.39 recall: 77.06 F1 = 76.22
+aste: 	rest15: 	test vote precision: 69.70 recall: 71.13 F1 = 70.41
+aste: 	rest16: 	test vote precision: 71.90 recall: 72.18 F1 = 72.04
+tasd: 	rest15: 	test vote precision: 70.01 recall: 63.55 F1 = 66.63
+tasd: 	rest16: 	test vote precision: 71.06 recall: 67.75 F1 = 69.37
+acos: 	laptop16: 	test vote precision: 42.48 recall: 42.73 F1 = 42.60
+acos: 	rest16: 	test vote precision: 59.62 recall: 58.84 F1 = 59.23
+acosi: 	shoes: 	    test vote precision: 9.44  recall: 10.08 F1 = 9.75
+asqp: 	rest15: 	test vote precision: 52.22 recall: 51.82 F1 = 52.02
+asqp: 	rest16: 	test vote precision: 57.47 recall: 59.70 F1 = 58.56
+Average F1: 	58.27823641484272
+seed: 5, beam: 1, constrained: True
+aste: 	laptop14: 	test vote precision: 64.52 recall: 61.18 F1 = 62.81
+aste: 	rest14: 	test vote precision: 76.37 recall: 77.36 F1 = 76.86
+aste: 	rest15: 	test vote precision: 68.54 recall: 70.52 F1 = 69.51
+aste: 	rest16: 	test vote precision: 73.87 recall: 73.15 F1 = 73.51
+tasd: 	rest15: 	test vote precision: 70.80 recall: 64.26 F1 = 67.37
+tasd: 	rest16: 	test vote precision: 73.10 recall: 68.34 F1 = 70.64
+acos: 	laptop16: 	test vote precision: 44.07 recall: 44.03 F1 = 44.05
+acos: 	rest16: 	test vote precision: 59.64 recall: 58.41 F1 = 59.02
+acosi: 	shoes: 	test vote precision: 9.45 recall: 9.88 F1 = 9.66
+asqp: 	rest15: 	test vote precision: 52.29 recall: 51.70 F1 = 51.99
+asqp: 	rest16: 	test vote precision: 59.44 recall: 61.08 F1 = 60.25
+Average F1: 	58.69678004301216

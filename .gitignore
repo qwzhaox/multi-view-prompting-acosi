@@ -172,6 +172,7 @@ cython_debug/
 outputs/**/**/final/
 outputs/**/**/lightning_logs/
 outputs/**/**/*.pickle
+outputs/**/**/*.ckpt
 
 outputs/**/lightning_logs/
 outputs/**/final/
