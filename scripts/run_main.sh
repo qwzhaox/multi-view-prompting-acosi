@@ -18,7 +18,7 @@ for DATA in ${TASK_DATA[${TASK}]}
 do
 for DATA_RATIO in 1.0
 do
-for SEED in 5
+for SEED in 10
 do
 # for SEED in 5 10 15 20 25
 # do
@@ -38,7 +38,7 @@ python main.py \
     --model_name_or_path t5-base \
     --output_dir $OUT_DIR \
     --num_train_epochs 20 \
-    --save_top_k 1 \
+    --save_top_k 0 \
     --task $TASK \
     --top_k $K \
     --ctrl_token $CTRL_TOKEN \
@@ -51,7 +51,7 @@ python main.py \
     --lowercase \
     --sort_label \
     --data_ratio $DATA_RATIO \
-    --check_val_every_n_epoch 2  \
+    --check_val_every_n_epoch 10  \
     --agg_strategy vote \
     --eval_batch_size 64 \
     --constrained_decode \

@@ -1,8 +1,0 @@
-seed: 5, beam: 1, constrained: True
-test vote precision: 8.40 recall: 8.64 F1 = 8.52
-seed: 5, beam: 1, constrained: True
-test vote precision: 8.40 recall: 8.64 F1 = 8.52
-seed: 5, beam: 1, constrained: True
-test vote precision: 8.52 recall: 8.44 F1 = 8.48
-seed: 5, beam: 1, constrained: True
-test vote precision: 9.31 recall: 9.47 F1 = 9.39

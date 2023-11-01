@@ -1,0 +1,14 @@
+Random seed set as 10
+
+****** Conduct inference on trained checkpoint ******
+Load trained model from ../outputs/unified/top5_seed10
+Note that a pretrained model is required and `do_true` should be False
+seed: 10, beam: 1, constrained: True
+
+Total examples = 328
+Total examples = 328
+Ori sent size: 328
+Input size: 1640 1640
+Examples:
+[['aste', ':', 'laptop14', ':', 'boot', 'time', 'is', 'super', 'fast', ',', 'around', 'anywhere', 'from', '35', 'seconds', 'to', '1', 'minute', '.', '[O]', '[A]', '[S]'], ['aste', ':', 'laptop14', ':', 'boot', 'time', 'is', 'super', 'fast', ',', 'around', 'anywhere', 'from', '35', 'seconds', 'to', '1', 'minute', '.', '[A]', '[O]', '[S]'], ['aste', ':', 'laptop14', ':', 'boot', 'time', 'is', 'super', 'fast', ',', 'around', 'anywhere', 'from', '35', 'seconds', 'to', '1', 'minute', '.', '[O]', '[S]', '[A]'], ['aste', ':', 'laptop14', ':', 'boot', 'time', 'is', 'super', 'fast', ',', 'around', 'anywhere', 'from', '35', 'seconds', 'to', '1', 'minute', '.', '[A]', '[S]', '[O]'], ['aste', ':', 'laptop14', ':', 'boot', 'time', 'is', 'super', 'fast', ',', 'around', 'anywhere', 'from', '35', 'seconds', 'to', '1', 'minute', '.', '[S]', '[O]', '[A]'], ['aste', ':', 'laptop14', ':', 'tech', 'support', 'would', 'not', 'fix', 'the', 'problem', 'unless', 'i', 'bought', 'your', 'plan', 'for', '$', '150', 'plus', '.', '[O]', '[A]', '[S]'], ['aste', ':', 'laptop14', ':', 'tech', 'support', 'would', 'not', 'fix', 'the', 'problem', 'unless', 'i', 'bought', 'your', 'plan', 'for', '$', '150', 'plus', '.', '[A]', '[O]', '[S]'], ['aste', ':', 'laptop14', ':', 'tech', 'support', 'would', 'not', 'fix', 'the', 'problem', 'unless', 'i', 'bought', 'your', 'plan', 'for', '$', '150', 'plus', '.', '[O]', '[S]', '[A]'], ['aste', ':', 'laptop14', ':', 'tech', 'support', 'would', 'not', 'fix', 'the', 'problem', 'unless', 'i', 'bought', 'your', 'plan', 'for', '$', '150', 'plus', '.', '[A]', '[S]', '[O]'], ['aste', ':', 'laptop14', ':', 'tech', 'support', 'would', 'not', 'fix', 'the', 'problem', 'unless', 'i', 'bought', 'your', 'plan', 'for', '$', '150', 'plus', '.', '[S]', '[O]', '[A]']]
+['[O] fast [A] boot time [S] great', '[A] boot time [O] fast [S] great', '[O] fast [S] great [A] boot time', '[A] boot time [S] great [O] fast', '[S] great [O] fast [A] boot time', '[O] not fix [A] tech support [S] bad', '[A] tech support [O] not fix [S] bad', '[O] not fix [S] bad [A] tech support', '[A] tech support [S] bad [O] not fix', '[S] bad [O] not fix [A] tech support']
