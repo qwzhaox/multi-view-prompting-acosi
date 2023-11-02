@@ -418,7 +418,7 @@ class T5FineTuner(pl.LightningModule):
             "]": [908],
             "it": [34],
             "null": [206, 195],
-            "implicit": [21773],
+            # "implicit": [21773],
         }
 
         left_brace_index = (input_ids == to_id["["][0]).nonzero()
@@ -474,8 +474,6 @@ class T5FineTuner(pl.LightningModule):
             force_list = source_ids[batch_id].tolist()
             if task == "acos":
                 force_list.extend(to_id["null"])  # null
-            elif task == "acosi":
-                force_list.extend(to_id["implicit"])
             ret = force_list
         elif cur_term in to_id["IE"]:  # IE
             ret = force_tokens["impl_expl_tokens"]

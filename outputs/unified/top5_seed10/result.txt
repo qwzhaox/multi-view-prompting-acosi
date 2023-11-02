@@ -1,10 +1,13 @@
 seed: 10, beam: 1, constrained: True
-seed: 10, beam: 1, constrained: True
-seed: 10, beam: 1, constrained: True
-seed: 10, beam: 1, constrained: True
-seed: 10, beam: 1, constrained: True
-seed: 10, beam: 1, constrained: True
-aste: 	laptop14: 	test vote precision: 67.64 recall: 64.14 F1 = 65.84
-seed: 10, beam: 1, constrained: True
-aste: 	laptop14: 	test vote precision: 67.64 recall: 64.14 F1 = 65.84
-aste: 	rest14: 	test vote precision: 74.59 recall: 77.36 F1 = 75.95
+aste: 	laptop14: 	test vote precision: 67.32 recall: 63.59 F1 = 65.40
+aste: 	rest14: 	test vote precision: 76.31 recall: 77.77 F1 = 77.03
+aste: 	rest15: 	test vote precision: 70.24 recall: 71.55 F1 = 70.89
+aste: 	rest16: 	test vote precision: 74.37 recall: 75.10 F1 = 74.73
+tasd: 	rest15: 	test vote precision: 68.85 recall: 63.31 F1 = 65.97
+tasd: 	rest16: 	test vote precision: 72.90 recall: 68.57 F1 = 70.67
+acos: 	laptop16: 	test vote precision: 44.32 recall: 43.17 F1 = 43.73
+acos: 	rest16: 	test vote precision: 61.18 recall: 60.04 F1 = 60.61
+acosi: 	shoes: 	test vote precision: 8.99 recall: 7.95 F1 = 8.44
+asqp: 	rest15: 	test vote precision: 53.38 recall: 52.58 F1 = 52.98
+asqp: 	rest16: 	test vote precision: 58.90 recall: 60.08 F1 = 59.48
+Average F1: 	59.083780375855945
