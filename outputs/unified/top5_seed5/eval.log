@@ -1,5 +1,0 @@
-Random seed set as 5
-
-****** Conduct inference on trained checkpoint ******
-Load trained model from ../outputs/unified/top5_seed5
-Note that a pretrained model is required and `do_true` should be False
