@@ -1,0 +1,2 @@
+seed: 5, beam: 1, constrained: True
+test vote precision: 45.07 recall: 44.29 F1 = 44.68

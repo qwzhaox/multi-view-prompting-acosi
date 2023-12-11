@@ -12,7 +12,7 @@ TASK_DATA[acosi]="shoes"
 cd src
 
 # for SVP_TYPE in heuristic rand rank 
-for TASK in acosi
+for TASK in acos
 do
 for DATA in ${TASK_DATA[${TASK}]}
 do
