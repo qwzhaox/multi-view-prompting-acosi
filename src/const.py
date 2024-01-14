@@ -1,5 +1,5 @@
-import os
 import json
+from pathlib import Path
 from ast import literal_eval
 
 senttag2opinion = {"pos": "great", "neg": "bad", "neu": "ok"}
@@ -170,14 +170,18 @@ def get_acosi_categories():
     task = "acos"
 #    task = "acosi"
 
+    train = Path(f"../data/{task}/shoes/train.txt")
+    test = Path(f"../data/{task}/shoes/test.txt")
+    dev = Path(f"../data/{task}/shoes/dev.txt")
+
     add_categories(
-        f"data/{task}/shoes/train.txt"
+        train.resolve()
     )
     add_categories(
-        f"data/{task}/shoes/test.txt"
+        test.resolve()
     )
     add_categories(
-        f"data/{task}/shoes/dev.txt"
+        dev.resolve()
     )
     # Convert the set of unique categories to a sorted list
     category_list = sorted(list(unique_categories))

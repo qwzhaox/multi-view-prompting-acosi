@@ -22,6 +22,8 @@ def process(data_folder, tasks, out_dir):
     # merge all data
     for task in tasks:
         task_path = join(data_folder, task)
+        if not os.path.exists(task_path):
+            continue
         print("task:", task_path)
         for data_name in os.listdir(task_path):
             data_path = join(task_path, data_name)
