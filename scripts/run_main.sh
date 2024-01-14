@@ -4,10 +4,11 @@ export CUDA_VISIBLE_DEVICES=0
 
 declare -A TASK_DATA
 TASK_DATA[asqp]="rest15 rest16"
-TASK_DATA[acos]="laptop16 rest16"
+#TASK_DATA[acos]="laptop16 rest16"
+TASK_DATA[acos]="laptop16 rest16 shoes"
 TASK_DATA[aste]="laptop14"
 TASK_DATA[tasd]="rest15 rest16"
-TASK_DATA[acosi]="shoes"
+#TASK_DATA[acosi]="shoes"
 
 cd src
 
