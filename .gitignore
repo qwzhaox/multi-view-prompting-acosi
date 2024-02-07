@@ -169,4 +169,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-outputs/
+outputs/**/**/final/
+outputs/**/**/lightning_logs/
+outputs/**/**/*.pickle
+outputs/**/**/*.ckpt
+
+outputs/**/lightning_logs/
+outputs/**/final/
