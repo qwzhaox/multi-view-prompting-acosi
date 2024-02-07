@@ -53,8 +53,7 @@ if [ "$task" = "acos" ]; then
 
     create_delete_dirs acos acosi
     cd ../Shoes-ACOSI
-    bash scripts/bash/convert_json_txt_for_mvp.sh -acos
-    bash scripts/bash/acosi_to_mvp.sh acos
+    bash scripts/bash/shoes_to_mvp.sh acos
 elif [ "$task" = "acosi" ]; then
     uncomment 7 "$run_main"
     comment 8 "$run_main"
@@ -74,8 +73,7 @@ elif [ "$task" = "acosi" ]; then
 
     create_delete_dirs acosi acos
     cd ../Shoes-ACOSI
-    bash ../Shoes-ACOSI/scripts/bash/convert_json_txt_for_mvp.sh -acosi
-    bash ../Shoes-ACOSI/scripts/bash/acosi_to_mvp.sh acosi 
+    bash ../Shoes-ACOSI/scripts/bash/shoes_to_mvp.sh acosi 
 else
     echo "task not found"
     exit 1
