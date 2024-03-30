@@ -167,8 +167,8 @@ def get_acosi_categories():
                         category = annotation[1].strip()
                         unique_categories.add(category)
 
-    task = "acos"
-#    task = "acosi"
+#    task = "acos"
+    task = "acosi"
 
     train = Path(f"../data/{task}/shoes/train.txt")
     test = Path(f"../data/{task}/shoes/test.txt")
@@ -209,11 +209,12 @@ cate_list = {
 task_data_list = {
     "aste": ["laptop14", "rest14", "rest15", "rest16"],
     "tasd": ["rest15", "rest16"],
-#    "acos": ["laptop16", "rest16"],
-    "acos": ["laptop16", "rest16", "shoes"],
-#    "acosi": ["shoes"],
+    "acos": ["laptop16", "rest16"],
+#    "acos": ["laptop16", "rest16", "shoes"],
+    "acosi": ["shoes"],
     "asqp": ["rest15", "rest16"],
 }
+
 force_words = {
     "aste": {
         "rest15": list(senttag2opinion.values()) + ["[SSEP]"],
@@ -230,11 +231,11 @@ force_words = {
         "laptop": laptop_aspect_cate_list
         + list(sentword2opinion.values())
         + ["[SSEP]"],
-        "shoes": shoes_aspect_cate_list + list(sentword2opinion.values()) + ["[SSEP]"],
+#        "shoes": shoes_aspect_cate_list + list(sentword2opinion.values()) + ["[SSEP]"],
     },
-#    "acosi": {
-#        "shoes": shoes_aspect_cate_list + list(sentword2opinion.values()) + ["[SSEP]"]
-#    },
+    "acosi": {
+        "shoes": shoes_aspect_cate_list + list(sentword2opinion.values()) + ["[SSEP]"]
+    },
     "asqp": {
         "rest15": rest_aspect_cate_list + list(sentword2opinion.values()) + ["[SSEP]"],
         "rest16": rest_aspect_cate_list + list(sentword2opinion.values()) + ["[SSEP]"],

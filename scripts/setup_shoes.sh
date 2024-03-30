@@ -42,14 +42,14 @@ if [ "$task" = "acos" ]; then
     uncomment 170 "$const"
     comment 171 "$const"
 
-    comment 208 "$const"
-    uncomment 209 "$const"
-    comment 210 "$const"
+    comment 212 "$const"
+    uncomment 213 "$const"
+    comment 214 "$const"
 
-    uncomment 229 "$const"
-    comment 231 "$const"
-    comment 232 "$const"
-    comment 233 "$const"
+    uncomment 234 "$const"
+    comment 236 "$const"
+    comment 237 "$const"
+    comment 238 "$const"
 
     create_delete_dirs acos acosi
     cd ../Shoes-ACOSI
@@ -62,14 +62,14 @@ elif [ "$task" = "acosi" ]; then
     comment 170 "$const"
     uncomment 171 "$const"
 
-    uncomment 208 "$const"
-    comment 209 "$const"
-    uncomment 210 "$const"
+    uncomment 212 "$const"
+    comment 213 "$const"
+    uncomment 214 "$const"
     
-    comment 229 "$const"
-    uncomment 231 "$const"
-    uncomment 232 "$const"
-    uncomment 233 "$const"
+    comment 234 "$const"
+    uncomment 236 "$const"
+    uncomment 237 "$const"
+    uncomment 238 "$const"
 
     create_delete_dirs acosi acos
     cd ../Shoes-ACOSI
